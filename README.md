@@ -9,7 +9,7 @@ This repository contains the *Software Development Methods* final project by Mar
 - Test: Package containing all the tests.
 
 ## Rules
-*Brique* is a simple two-player board game. Rules can be found [here](https://github.com/MarcoAlbertoGrimaldi/BriqueGUI/edit/master/Rules.pdf).
+*Brique* is a simple two-player board game. Rules can be found [here](https://github.com/valeriapaolucci/SDM_Brique/edit/master//Rules.pdf).
 
 
 ## How to run the project
