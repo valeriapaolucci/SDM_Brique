@@ -1,5 +1,6 @@
 import CLI.IO_Interface;
-import CLI.Launch_Game_cli;
+
+import CLI.Menu;
 import Logic.Launch_Game;
 
 public class Brique {
@@ -10,8 +11,8 @@ public class Brique {
             Launch_Game game = new Launch_Game();
             game.launch();
         } else {
-            Launch_Game_cli game = new Launch_Game_cli();
-            game.launch();
+            Menu menu = new Menu();
+            menu.Launch_menu();
 
         }
     }
