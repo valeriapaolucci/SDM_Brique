@@ -19,11 +19,11 @@ To run the project you simply need to compile *Brique.java* file and then run th
 <br>You will be then asked whether you want to play with the Graphical User Interface: you can type *yes* if you prefer to play with the GUI or *no* if you prefer the Command Line Interface.
 
 ## GUI
-We exploited the functionalities of *JFrame* in order to provide a Graphical User Interface.
+We exploited the functionalities of *Swing* in order to provide a Graphical User Interface.
 <br>A menu will show up containing the following buttons:
 - **Single Player**: allowing a single player to compete vs. AI (actually it is not trained, so it basically a random player).
 - **Multiplayer**: allowing two players to compete against each other, alternating their turns.
-- **Settings**: allowing you to set the players' names, your colour in case you choose to play with Single Player mode, the resolution.
+- **Settings**: allowing you to set the players' names, your colour in case you choose to play with Single Player mode and the resolution.
 - **Quit**: allowing you to leave the game.
 
 
