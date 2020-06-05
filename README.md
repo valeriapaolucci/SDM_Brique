@@ -13,13 +13,13 @@ This repository contains the *Software Development Methods* final project by Mar
 
 
 ## How to run the project
-...
+To run the program you simply need to compile "brique.java" file and then run the executable (you can do it through Intellij configuration or manually, it is the same).
 <br>You will be asked whether you want to play with the Graphical User Interface: you can type *yes* if you prefer to play with the GUI or *no* if you prefer the Command Line Interface.
 
 ## GUI
 We exploited the functionalities of *JFrame* in order to provide a Graphical User Interface.
 <br>A menu will show up containing the following buttons:
-- **Single Player**: allowing a single player to compete vs. AI.
+- **Single Player**: allowing a single player to compete vs. AI (actually it is not trained, so it basically a random player).
 - **Multiplayer**: allowing two players to compete against each other, alternating their turns.
 - **Settings**: allowing you to set the players' names, your colour in case you choose to play with Single Player mode, the resolution.
 - **Quit**: allowing you to leave the game.
