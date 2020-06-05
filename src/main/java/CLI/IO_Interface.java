@@ -12,20 +12,20 @@ public class IO_Interface {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static String ChooseInterface(){
-        String res = "";
+    public static boolean ChooseInterface(){
+        boolean res = false;
         System.out.println("Welcome to Brique!");
-        boolean valid = false;
+        AtomicBoolean valid = new AtomicBoolean(false);
         System.out.println("Do you want to play with GUI? Type 'yes' or 'no':");
-        while(!valid){
+        while(!valid.get()){
             String input = scanner.next();
             if(input.equals("yes")){
-                valid = true;
-                res =  "GUI";
+                valid.set(true);
+                res =  true;
             }
             else if(input.equals("no")){
-                valid = true;
-                res =  "CLI";}
+                valid.set(true);
+                res =  false;}
             else{
                 System.out.println("Not a valid answer! Try again:");
             }
@@ -33,7 +33,7 @@ public class IO_Interface {
         return res;
     }
 
-    static String getName(PieceColor control) {
+    public static String getName(PieceColor control) {
         System.out.println("Enter name for " + control.toString() + " player:");
         return scanner.next();
     }
@@ -86,7 +86,7 @@ public class IO_Interface {
         return status;
     }
 
-    static int getMenuChoice(){
+    public static int getMenuChoice(){
         AtomicBoolean valid = new AtomicBoolean(false);
         AtomicReference<String> input;
         input = new AtomicReference<>("2");

@@ -41,7 +41,7 @@ public class Display {
         System.out.println("-------------------------------------------------------------");
     }
 
-    static void printMenu(Menu menu) {
+    public static void printMenu(Menu menu) {
         System.out.println(menu.getMenuOptions());
     }
 

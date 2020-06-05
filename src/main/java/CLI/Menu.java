@@ -1,5 +1,10 @@
 package CLI;
 
+import Logic.PieceColor;
+import Logic.Player;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class Menu {
 
     private final String menuOptions;
@@ -15,4 +20,7 @@ public class Menu {
     public String getMenuOptions() {
         return menuOptions;
     }
+
 }
+
+
