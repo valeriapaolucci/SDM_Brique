@@ -1,5 +1,4 @@
-# Brique
-[![Build Status](https://travis-ci.org/valeriapaolucci/SDM_Brique.svg?branch=master)](https://travis-ci.org/valeriapaolucci/SDM_Brique)
+# Brique [![Build Status](https://travis-ci.org/valeriapaolucci/SDM_Brique.svg?branch=master)](https://travis-ci.org/valeriapaolucci/SDM_Brique)
 ## The project
 This repository contains the *Software Development Methods* final project by Marco Alberto Grimaldi, Valeria Paolucci, Alberto Presta.
 
@@ -21,7 +20,7 @@ To run the project you simply need to compile *Brique.java* file and then run th
 ## GUI
 We exploited the functionalities of *Swing* in order to provide a Graphical User Interface.
 <br>A menu will show up containing the following buttons:
-- **Single Player**: allowing a single player to compete vs. AI (actually it is not trained, so it basically a random player).
+- **Single Player**: allowing a single player to compete vs. AI (actually it is not trained, so it's basically a random player).
 - **Multiplayer**: allowing two players to compete against each other, alternating their turns.
 - **Settings**: allowing you to set the players' names, your colour in case you choose to play with Single Player mode and the resolution.
 - **Quit**: allowing you to leave the game.
