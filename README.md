@@ -1,4 +1,5 @@
 # Brique
+[![Build Status](https://travis-ci.org/valeriapaolucci/SDM_Brique.svg?branch=master)](https://travis-ci.org/valeriapaolucci/SDM_Brique)
 ## The project
 This repository contains the *Software Development Methods* final project by Marco Alberto Grimaldi, Valeria Paolucci, Alberto Presta.
 
