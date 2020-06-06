@@ -54,7 +54,7 @@ public class RulesTest {
         board.getCell(c).setState(state);
         Coordinates c2 = GetRightCoordinateToApplyEscortRule(c);
         modify_board(board,c,c2,state);
-        ArrayList<Enum<State>> StateToBeControlled = GetCoordinatesOfStateModifiedByEscortRule(c,board);
+        ArrayList<Enum<State>> StateToBeControlled = GetCoordinatesOfStatesModifiedByEscortRule(c,board);
         Assert.assertEquals(state, StateToBeControlled.get(0));
         Assert.assertEquals(State.EMPTY, StateToBeControlled.get(1));
     }
@@ -79,7 +79,7 @@ public class RulesTest {
         }
     }
 
-    public ArrayList<Enum<State>> GetCoordinatesOfStateModifiedByEscortRule(Coordinates c, Board board){
+    public ArrayList<Enum<State>> GetCoordinatesOfStatesModifiedByEscortRule(Coordinates c, Board board){
         ArrayList<Enum<State>> res = new ArrayList<>();
         if((c.getCol()+c.getRow())%2==0){
             res.add(board.getCell(new Coordinates(c.getRow(), c.getCol() - 1)).getState());
