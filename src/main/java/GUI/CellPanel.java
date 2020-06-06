@@ -27,7 +27,7 @@ public class CellPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.setColor((row + col) % 2 == 0 ? new java.awt.Color(78, 33, 8) : new java.awt.Color(227, 195, 173));
+        g.setColor((row + col) % 2 == 0 ? new java.awt.Color(227, 195, 173) : new java.awt.Color(78, 33, 8));
         g.fillRect(0, 0, dimension.width, dimension.height);
         g.setColor(java.awt.Color.BLACK);
         g.drawRect(0, 0, dimension.width, dimension.height);

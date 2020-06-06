@@ -41,7 +41,7 @@ public class Rules  {
             if (Coordinates.valid_coordinates(c.getRow()+1,c.getCol()))
                 res.add(extract_specific_cell(board, c.getRow() + 1, c.getCol()));
             if (Coordinates.valid_coordinates(c.getRow(),c.getCol()+1))
-                res.add(extract_specific_cell(board, c.getRow(), c.getCol() + 1));
+                res.add(extract_specific_cell(board, c.getRow(), c.getCol() +1));
         }
         return res;
     }
