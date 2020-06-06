@@ -33,14 +33,14 @@ public class Rules  {
         ArrayList<Cell> res = new ArrayList<>();
         Cell cell = board.getCell(c);
         if (cell.getPieceColor() == PieceColor.WHITE) {
-            if(Coordinates.valid_coordinates(c.getRow()-1,c.getCol()))
+            if((new Coordinates(c.getRow()-1,c.getCol())).areValid())
                 res.add(extract_specific_cell(board, c.getRow() - 1, c.getCol()));
-            if (Coordinates.valid_coordinates(c.getRow(),c.getCol()-1))
+            if ((new Coordinates(c.getRow(),c.getCol()-1)).areValid())
                 res.add(extract_specific_cell(board, c.getRow(), c.getCol() - 1));
         } else {
-            if (Coordinates.valid_coordinates(c.getRow()+1,c.getCol()))
+            if ((new Coordinates(c.getRow()+1,c.getCol())).areValid())
                 res.add(extract_specific_cell(board, c.getRow() + 1, c.getCol()));
-            if (Coordinates.valid_coordinates(c.getRow(),c.getCol()+1))
+            if ((new Coordinates(c.getRow(),c.getCol()+1)).areValid())
                 res.add(extract_specific_cell(board, c.getRow(), c.getCol() +1));
         }
         return res;

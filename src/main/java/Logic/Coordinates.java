@@ -19,14 +19,12 @@ public class Coordinates {
         return col;
     }
 
+
     public boolean areValid() {
         int[] x = new int[]{this.row, this.col};
         return (Arrays.stream(x).filter(z -> z < 15).filter(z -> z >= 0).count() == 2);
     }
 
-    static boolean valid_coordinates(int i, int j) {
-        return (new Coordinates(i, j)).areValid();
-    }
 
 
     public void setCoordinates(int r, int c) {
