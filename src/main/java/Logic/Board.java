@@ -15,8 +15,4 @@ public class Board {
         return grid[coordinates.getRow()][coordinates.getCol()];
     }
 
-    public Cell getCell(int row, int col) {
-        return grid[row][col];
-    }
-
 }

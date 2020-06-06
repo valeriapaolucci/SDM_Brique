@@ -98,9 +98,9 @@ public class Graph {
         int row = coordinates.getRow();
         int col = coordinates.getCol();
 
-        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row + i, col).areValid() &&board.getCell(row + i, col).getState() == state){
+        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row + i, col).areValid() &&board.getCell(new Coordinates(row+i,col)).getState() == state){
             neighbours.add(new Coordinates(row + i, col));}});
-        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row , col+i).areValid() &&board.getCell(row , col+i).getState() == state){
+        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row , col+i).areValid() &&board.getCell(new Coordinates(row,col+i)).getState() == state){
             neighbours.add(new Coordinates(row, col+i));}});
 
         return neighbours;
@@ -114,9 +114,9 @@ public class Graph {
         int row = coordinates.getRow();
         int col = coordinates.getCol();
 
-        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row + i, col).areValid() && board.getCell(row + i, col).getState() == state){
+        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row + i, col).areValid() && board.getCell(new Coordinates(row+i,col)).getState() == state){
             opponents.add(new Coordinates(row + i, col));}});
-        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row , col+i).areValid() && board.getCell(row , col+i).getState() == state){
+        new ArrayList<>(Arrays.asList(-1, 1)).forEach(i->{if(new Coordinates(row , col+i).areValid() && board.getCell(new Coordinates(row,col+i)).getState() == state){
             opponents.add(new Coordinates(row, col+i));}});
 
         return opponents;

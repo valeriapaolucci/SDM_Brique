@@ -50,8 +50,8 @@ public class GraphTest {
     public void check_find_neighbours(){
         Graph graph = new Graph(PieceColor.WHITE);
         Board board = new Board();
-        board.getCell(1,1).setState(State.W_PIECE);
-        board.getCell(0,1).setState(State.W_PIECE);
+        board.getCell(new Coordinates(1,1)).setState(State.W_PIECE);
+        board.getCell(new Coordinates(0,1)).setState(State.W_PIECE);
         ArrayList<Coordinates> neighbours = graph.find_neighbours(new Coordinates(1,1),PieceColor.WHITE,board);
         assertEquals(0, neighbours.get(0).getRow());
         assertEquals(1, neighbours.get(0).getCol());
