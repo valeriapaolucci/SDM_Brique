@@ -7,21 +7,21 @@ import org.junit.Assert;
 import java.awt.*;
 
 
-class SettingsTest {
+public class SettingsTest {
 
     @Test
-    void getResolution() {
+    public void getResolution() {
         Assert.assertEquals(Settings.getResolution(), new Dimension(720, 720));
     }
 
     @Test
-    void setResolution() {
+    public void setResolution() {
         Settings.setResolution(0);
         Assert.assertEquals(Settings.getResolution(), new Dimension(480, 480));
     }
 
     @Test
-    void toDimension() {
+    public void toDimension() {
         Assert.assertEquals(new Dimension(720, 720), Settings.toDimension("720x720"));
     }
 }
