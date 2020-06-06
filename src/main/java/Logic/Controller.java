@@ -38,7 +38,7 @@ public class Controller {
     }
 
     public static boolean areEmpty(Board board, Coordinates coordinates) {
-        return board.getCell(coordinates).getState() == State.EMPTY;
+    return board.getCell(coordinates).getState() == State.EMPTY;
     }
 
     public static void swapControl(Player p1, Player p2) {
