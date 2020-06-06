@@ -19,8 +19,7 @@ public class MainMenu extends JFrame {
 
         mainMenu.setSize(Settings.getResolution());
         mainMenu.setLocationRelativeTo(null);
-
-        BufferedImage myImage = ImageIO.read(new File("../../../brique.jpg"));
+        BufferedImage myImage = ImageIO.read(new File("brique.jpg"));
 
         mainMenu.setContentPane(new ImagePanel(myImage));
 
