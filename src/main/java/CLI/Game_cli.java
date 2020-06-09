@@ -20,12 +20,22 @@ public class Game_cli {
     }
 
 
+
+
     public void playGame(){
         if(player_1.isHuman()) Display.printBoard(board);
         AtomicBoolean victory = new AtomicBoolean(false);
         while (!victory.get()){
             move_counter++;
-            Turn_cli turn = new Turn_cli(this);
+            Coordinates coordinates = null;
+            if(this.getCurrent_player().isHuman()) {
+                coordinates = IO_Interface.getCoordinates(this.getCurrent_player());
+                if(this.getCurrent_player().isResigned()) return;
+            }
+            else {
+                coordinates = AI_Logic.chooseRandomCoordinates(this.getBoard());
+            }
+            Turn_cli turn = new Turn_cli(this,coordinates);
             turn.playTurn();
             if(getCurrent_player().isResigned()){
                 Display.printResignedMessage(this);

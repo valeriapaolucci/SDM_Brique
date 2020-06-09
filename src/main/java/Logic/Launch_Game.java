@@ -36,17 +36,13 @@ public class Launch_Game {
                 switch (s) {
                     case 0:
                         player1 = new Player(PieceColor.BLACK, IO_Interface.getName(PieceColor.BLACK));
-                        System.out.println();
                         player2 = new Player(PieceColor.WHITE, IO_Interface.getName(PieceColor.WHITE));
-                        System.out.println();
                         Game_cli gameHum = new Game_cli(player1, player2);
                         gameHum.playGame();
                         break;
                     case 1:
                         player1 = new Player(PieceColor.BLACK);
-                        System.out.println();
                         player2 = new Player(PieceColor.WHITE, IO_Interface.getName(PieceColor.WHITE));
-                        System.out.println();
                         Game_cli gameAI = new Game_cli(player1, player2);
                         gameAI.playGame();
                         break;
