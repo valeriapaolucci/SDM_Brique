@@ -1,5 +1,9 @@
 package Logic;
 
+import Data.Board;
+import Data.Coordinates;
+import Data.State;
+
 import java.util.Random;
 
 public class AI_Logic {

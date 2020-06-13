@@ -3,9 +3,9 @@
 This repository contains the *Software Development Methods* final project by Marco Alberto Grimaldi, Valeria Paolucci, Alberto Presta.
 
 ## Project structure
-- Logic: Package containing all the logic of the game, from the board to the rules of the game.
-- CLI: Package that manages the game flow and the interface from Command Line.
-- GUI: Package that manages the game flow and the interface from the GUI.
+- Data: Package containing all the logic of the game, from the board to the rules of the game.
+- CommandLine: Package that manages the game flow and the interface from Command Line.
+- GraphicalUserInterface: Package that manages the game flow and the interface from the GraphicalUserInterface.
 - Test: Package containing all the tests.
 
 ## Rules
@@ -15,9 +15,9 @@ This repository contains the *Software Development Methods* final project by Mar
 ## Running the project
 To run the project you simply need to compile *Brique.java* file and then run the executable (you can do it through *IntelliJ* configuration or manually, it is the same).
 <br>
-<br>You will be then asked whether you want to play with the Graphical User Interface: you can type *yes* if you prefer to play with the GUI or *no* if you prefer the Command Line Interface.
+<br>You will be then asked whether you want to play with the Graphical User Interface: you can type *yes* if you prefer to play with the GraphicalUserInterface or *no* if you prefer the Command Line Interface.
 
-## GUI
+## GraphicalUserInterface
 We exploited the functionalities of *Swing* in order to provide a Graphical User Interface.
 <br>A menu will show up containing the following buttons:
 - **Single Player**: allowing a single player to compete vs. AI (actually it is not trained, so it's basically a random player).

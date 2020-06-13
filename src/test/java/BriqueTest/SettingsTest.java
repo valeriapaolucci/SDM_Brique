@@ -1,6 +1,6 @@
 package BriqueTest;
 
-import Logic.Settings;
+import Data.Settings;
 import org.junit.Test;
 import org.junit.Assert;
 

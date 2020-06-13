@@ -1,7 +1,8 @@
 package BriqueTest;
 
-
-import Logic.*;
+import Data.Cell;
+import Data.PieceColor;
+import Data.State;
 import org.junit.Test;
 import org.junit.Assert;
 

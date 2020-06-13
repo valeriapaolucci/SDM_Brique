@@ -1,11 +1,17 @@
 package BriqueTest;
 
-
+import Data.Game;
+import Data.PieceColor;
+import Data.Player;
 import Logic.*;
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class GameTest {
+
+
+
 
 
     @Test
@@ -18,7 +24,7 @@ public class GameTest {
 
 
     private void check_cell_init(Player player_1, Player player_2) {
-        Game game = new Game(player_1,player_2, false);
+        Game game = new Game(player_1,player_2);
         assertTrue(game.getPlayer_1().isHuman());
         assertFalse(game.getPlayer_2().isHuman());
         assertEquals(game.getPlayer_1().getControl(), PieceColor.BLACK);
