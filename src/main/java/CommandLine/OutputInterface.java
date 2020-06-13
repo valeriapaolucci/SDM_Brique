@@ -10,7 +10,7 @@ public interface OutputInterface {
 
 
     default void printCurrentPlayer(Player player){
-        System.out.println(player.getName()+"'s turn.\n");
+        System.out.println(player.getName()+"'s turn.");
     }
 
     default void printMove(String counter, String name, String control){
