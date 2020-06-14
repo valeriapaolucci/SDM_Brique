@@ -7,7 +7,7 @@ public class Settings {
 
     static String player1Name = "p1", player2Name = "p2";
     static PieceColor Player1PieceColor = PieceColor.BLACK, Player2PieceColor = PieceColor.WHITE;
-    static int resolution = 1;
+    static int resolution = 0;
     static final String[] dimensions = {"480x480", "720x720", "960x960"};
     static final Double ratio = 2.0/3;
 
