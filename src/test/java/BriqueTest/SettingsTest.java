@@ -11,7 +11,7 @@ public class SettingsTest {
 
     @Test
     public void getResolution() {
-        Assert.assertEquals(Settings.getResolution(), new Dimension(720, 720));
+        Assert.assertEquals(Settings.getResolution(), new Dimension(480, 480));
     }
 
     @Test
