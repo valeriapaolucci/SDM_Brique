@@ -6,7 +6,7 @@ public class PlayerInputHandler implements InputInterface {
     final String player_err_msg = "This nickname is not valid. Try another one (using only alphanumeric or underscore characters):";
     final String player_pattern = "\\w+";
 
-    final String pie_rule_request_msg = "If you want to apply the pie rule, type '1'; otherwise type '0'.";
+    final String pie_rule_request_msg = "if you want to apply the pie rule type '1', otherwise type '0'.";
     final String pie_rule_err_msg = "Not valid. Please type '0' or '1':";
     final String pie_rule_pattern = "[0-1]";
 
