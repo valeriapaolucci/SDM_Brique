@@ -28,7 +28,7 @@ public interface Rules {
         return escorts;
     }
 
-    private Cell extract_specific_cell(Board board, int i, int j) {
+    default Cell extract_specific_cell(Board board, int i, int j) {
         Coordinates esc1 = new Coordinates(i, j);
         if (esc1.areValid()) {
             return board.getCell(esc1);

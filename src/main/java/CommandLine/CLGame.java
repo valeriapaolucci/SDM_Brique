@@ -1,9 +1,10 @@
 package CommandLine;
 
 import Data.Coordinates;
-import Data.Game;
+
 import Data.Player;
 import Logic.AI_Logic;
+import Logic.Game;
 
 public class CLGame extends Game implements OutputInterface {
 

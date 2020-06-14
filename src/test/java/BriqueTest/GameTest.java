@@ -1,6 +1,6 @@
 package BriqueTest;
 
-import Data.Game;
+
 import Data.PieceColor;
 import Data.Player;
 import Logic.*;

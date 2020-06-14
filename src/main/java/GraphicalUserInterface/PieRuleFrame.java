@@ -1,7 +1,8 @@
 package GraphicalUserInterface;
 
 import Logic.AI_Logic;
-import Data.Game;
+
+import Logic.Game;
 
 import javax.swing.*;
 import java.awt.*;
@@ -80,4 +81,6 @@ public class PieRuleFrame {
 
         pieRule.setVisible(true);
     }
+
+
 }

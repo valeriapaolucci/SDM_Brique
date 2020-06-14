@@ -2,6 +2,7 @@ package BriqueTest;
 
 import Data.*;
 import Logic.GameFlow;
+import Logic.Graph;
 import org.junit.Assert;
 import org.junit.Test;
 

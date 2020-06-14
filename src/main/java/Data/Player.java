@@ -1,5 +1,7 @@
 package Data;
 
+import Logic.Graph;
+
 public class Player {
 
     private boolean human = false;
@@ -73,11 +75,5 @@ public class Player {
         this.current = bool;
     }
 
-// --Commented out by Inspection START (11/06/2020 10:06):
-//    public void setResigned() {
-//        this.resigned = true;
-//    }
-// --Commented out by Inspection STOP (11/06/2020 10:06)
 
-    public boolean isResigned() { return resigned; }
 }

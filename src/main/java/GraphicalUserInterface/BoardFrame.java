@@ -4,7 +4,7 @@ import Data.Coordinates;
 import Data.Player;
 import Data.Settings;
 import Logic.AI_Logic;
-import Data.Game;
+import Logic.Game;
 import Data.PieceColor;
 
 import javax.swing.*;

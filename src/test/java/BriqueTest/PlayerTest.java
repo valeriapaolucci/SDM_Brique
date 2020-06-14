@@ -1,8 +1,9 @@
 package BriqueTest;
 
-import Data.Graph;
+
 import Data.PieceColor;
 import Data.Player;
+import Logic.Graph;
 import org.junit.Test;
 import org.junit.Assert;
 

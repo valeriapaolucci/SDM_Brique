@@ -1,6 +1,8 @@
-package Data;
+package Logic;
 
-import Logic.GameFlow;
+import Data.Board;
+import Data.Player;
+
 
 public class Game implements GameFlow {
 

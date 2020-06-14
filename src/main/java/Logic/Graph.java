@@ -1,4 +1,9 @@
-package Data;
+package Logic;
+import Data.Board;
+import Data.Coordinates;
+import Data.PieceColor;
+import Data.State;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;

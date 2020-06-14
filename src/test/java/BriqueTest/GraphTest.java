@@ -1,6 +1,7 @@
 package BriqueTest;
 
 import Data.*;
+import Logic.Graph;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
