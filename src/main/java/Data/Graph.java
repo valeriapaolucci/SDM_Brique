@@ -19,8 +19,8 @@ public class Graph {
     }
 
     public void addEdge(Coordinates v, Coordinates w) {
-        adjacencyList.get(v.getRow() * 15 + v.getCol()).add(w.getRow() * 15 + w.getCol());
-        adjacencyList.get(w.getRow() * 15 + w.getCol()).add(v.getRow() * 15 + v.getCol());
+        adjacencyList.get(coordinatesToInt(v)).add(coordinatesToInt(w));
+        adjacencyList.get(coordinatesToInt(w)).add(coordinatesToInt(v));
     }
 
     void addBorders(PieceColor control){
@@ -39,11 +39,11 @@ public class Graph {
     }
 
     public void rmvEdge(Coordinates v, Coordinates w) {
-        adjacencyList.get(v.getRow() * 15 + v.getCol()).remove(adjacencyList.get(v.getRow() * 15 + v.getCol()).indexOf(w.getRow() * 15 + w.getCol()));
-        adjacencyList.get(w.getRow() * 15 + w.getCol()).remove(adjacencyList.get(w.getRow() * 15 + w.getCol()).indexOf(v.getRow() * 15 + v.getCol()));
+        adjacencyList.get(coordinatesToInt(v)).remove(adjacencyList.get(coordinatesToInt(v)).indexOf(coordinatesToInt(w)));
+        adjacencyList.get(coordinatesToInt(w)).remove(adjacencyList.get(coordinatesToInt(w)).indexOf(coordinatesToInt(v)));
     }
 
-    int coordinatesToInt(Coordinates coordinates){
+    private int coordinatesToInt(Coordinates coordinates){
         return coordinates.getRow() * 15 + coordinates.getCol();
     }
 
