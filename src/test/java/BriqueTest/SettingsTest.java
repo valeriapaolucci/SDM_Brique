@@ -11,13 +11,13 @@ public class SettingsTest {
 
     @Test
     public void getResolution() {
-        Assert.assertEquals(Settings.getResolution(), new Dimension(480, 480));
+        Assert.assertEquals(new Dimension(480, 480),Settings.getResolution());
     }
 
     @Test
     public void setResolution() {
         Settings.setResolution(0);
-        Assert.assertEquals(Settings.getResolution(), new Dimension(480, 480));
+        Assert.assertEquals(new Dimension(480, 480),Settings.getResolution());
     }
 
     @Test

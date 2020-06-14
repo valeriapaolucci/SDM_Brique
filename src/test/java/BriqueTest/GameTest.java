@@ -26,10 +26,9 @@ public class GameTest {
         Game game = new Game(player_1,player_2);
         assertTrue(game.getPlayer_1().isHuman());
         assertFalse(game.getPlayer_2().isHuman());
-        assertEquals(game.getPlayer_1().getControl(), PieceColor.BLACK);
-        assertEquals(game.getPlayer_2().getControl(), PieceColor.WHITE);
-        assertEquals(game.getPlayer_1().getName(), "Human");
-        assertEquals(game.getPlayer_2().getName(), "AI");
+        assertEquals(PieceColor.WHITE,game.getPlayer_2().getControl());
+        assertEquals("Human",game.getPlayer_1().getName());
+        assertEquals("AI",game.getPlayer_2().getName());
 
     }
 }

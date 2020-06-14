@@ -20,8 +20,8 @@ public class RulesTest implements Rules{
         Player p2 = new Player( PieceColor.WHITE, "p2");
         Game game = new Game(p1,p2);
         game.apply_pie_rule(p1, p2);
-        Assert.assertEquals(p1.getControl(), PieceColor.WHITE);
-        Assert.assertEquals(p2.getControl(), PieceColor.BLACK);
+        Assert.assertEquals(PieceColor.WHITE,p1.getControl());
+        Assert.assertEquals(PieceColor.BLACK,p2.getControl());
     }
 
 
@@ -47,10 +47,10 @@ public class RulesTest implements Rules{
 
 
     public void check_coordinates(ArrayList<Cell> escorts,int row_0,int col_0,int row_1,int col_1){
-        Assert.assertEquals(escorts.get(0).getCoordinates().getRow(),row_0);
-        Assert.assertEquals(escorts.get(0).getCoordinates().getCol(),col_0);
-        Assert.assertEquals(escorts.get(1).getCoordinates().getRow(),row_1);
-        Assert.assertEquals(escorts.get(1).getCoordinates().getCol(),col_1);
+        Assert.assertEquals(row_0,escorts.get(0).getCoordinates().getRow());
+        Assert.assertEquals(col_0,escorts.get(0).getCoordinates().getCol());
+        Assert.assertEquals(row_1,escorts.get(1).getCoordinates().getRow());
+        Assert.assertEquals(col_1,escorts.get(1).getCoordinates().getCol());
 
 
     }

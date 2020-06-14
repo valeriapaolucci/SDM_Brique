@@ -20,7 +20,7 @@ public class PlayerTest {
     public void check_name(){
         Player player = new Player(PieceColor.WHITE,"player_1");
         Assert.assertTrue(player.isHuman());
-        Assert.assertEquals(player.getName(),"player_1");
+        Assert.assertEquals("player_1",player.getName());
     }
 
     @Test
@@ -39,7 +39,7 @@ public class PlayerTest {
         Player player1 = new Player(PieceColor.BLACK, "Human");
         Player player2 = new Player(PieceColor.WHITE, "Human_2");
         player1.switchPlayer(player2);
-        Assert.assertEquals(player1.isCurrent(),false);
+        Assert.assertEquals(false,player1.isCurrent());
     }
 
 

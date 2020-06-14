@@ -36,7 +36,7 @@ public class GameFlowTest implements GameFlow {
         Board board = new Board();
         Coordinates coordinates = new Coordinates(1,1);
         ArrayList<Coordinates> res = make_move(board,coordinates,player_1,player_2);
-        Assert.assertEquals(board.getCell(coordinates).getState(), State.B_PIECE);
+        Assert.assertEquals(State.B_PIECE,board.getCell(coordinates).getState());
     }
 
 
