@@ -3,7 +3,7 @@ package CommandLine;
 public class PlayerInputHandler implements InputInterface {
 
     final String player_request_msg = "Type your nickname:";
-    final String player_err_msg = "This nickname is not valid. Try another one:";
+    final String player_err_msg = "This nickname is not valid. Try another one (using only alphanumeric or underscore characters):";
     final String player_pattern = "\\w+";
 
     final String pie_rule_request_msg = "If you want to apply the pie rule, type '1'; otherwise type '0'.";
