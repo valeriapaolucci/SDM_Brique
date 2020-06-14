@@ -12,7 +12,7 @@ This repository contains the *Software Development Methods* final project by Mar
 ## Rules
 *Brique* is a simple two-player board game. Rules can be found [here](https://github.com/valeriapaolucci/SDM_Brique/edit/master//Rules.pdf).
 
-## Game interface
+## Game interfaces
 The project is equipped with two main classes: *BriqueCL.java* (which manages the game with Command Line interface) and *BriqueGUI.java* (which manages the game with GUI).
 
 ## Graphical User Interface
