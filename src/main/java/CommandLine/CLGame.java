@@ -25,7 +25,7 @@ public class CLGame extends Game implements OutputInterface {
         while (!victory){
             if(getCurrent_player().isHuman()){
                 printCurrentPlayer(getCurrent_player());
-                String input_move = getPlayerMove(playerInputHandler);
+                String input_move = getPlayerMove(playerInputHandler, board);
                 if(input_move.equals("res")){
                     printResignedMessage(getCurrent_player().getName());
                     break;

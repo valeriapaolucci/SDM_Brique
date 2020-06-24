@@ -11,15 +11,15 @@ public interface GameFlow extends Rules {
         return graph.pathFound(225, 226);
     }
 
-    default String getPlayerMove(PlayerInputHandler playerInputHandler){
+    default String getPlayerMove(PlayerInputHandler playerInputHandler, Board board){
         String input;
         while(true) {
             input = playerInputHandler.getInput(playerInputHandler.getCoordinate_request_msg(), playerInputHandler.getCoordinate_err_msg(), playerInputHandler.getCoordinate_pattern());
             if (input.equals("res")) return input;
             else {
-                Coordinates coordinates = new Coordinates(input.charAt(0) - 'a', 15 - Integer.parseInt(input.substring(1)));
-                if (!coordinates.areValid()) {
-                    System.out.println("Position already occupied, insert again");
+                Coordinates coordinates = new Coordinates(15 - Integer.parseInt(input.substring(1)), input.charAt(0) - 'a');
+                if (!board.areEmpty(coordinates)) {
+                    System.out.println("Position already occupied.");
                 } else break;
             }
         }
